@@ -1,0 +1,13 @@
+.slogan-about-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+    padding-top: 1rem;
+  }
+  
+  .slogan-about-item {
+    width: 3.75rem;
+    border-bottom: 0.125rem solid black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
