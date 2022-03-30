@@ -1,6 +1,6 @@
 const data = {
     MainPageNavigation: {
-        listItem1: "Coffe house",
+        listItem1: "Coffee house",
         listItem2: "Our coffe",
         listItem3: "For your pleasure"
     },
@@ -23,7 +23,18 @@ const data = {
         furniture set preserved far recommend. Did even but nor are most gave
         hope. Secure active living depend son repair day ladies now.`,
         header: "About us"
-    }
+    },
+    Products: [
+        {id: 1, photo: "img/item1.jpg", title: "Solimo Coffee Beans 2 kg", country: "", price: "10.73$", best: true},
+        {id: 2, photo: "img/item2.jpg", title: "Presto Coffee Beans 1 kg", country: "", price: "15.99$", best: true},
+        {id: 3, photo: "img/item3.jpg", title: "AROMISTICO Coffee 1 kg", country: "", price: "6.99$", best: true},
+        {id: 4, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "6.99$", best: false},
+        {id: 5, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Kenya", price: "6.99$", best: false},
+        {id: 6, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Columbia", price: "6.99$", best: false},
+        {id: 7, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "6.99$", best: false},
+        {id: 8, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "6.99$", best: false},
+        {id: 9, photo: "img/item4.jpg", title: "AROMISTICO Coffee 1 kg", country: "Brazil", price: "6.99$", best: false}
+    ]
 }
 
 export default data;

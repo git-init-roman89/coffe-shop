@@ -1,6 +1,5 @@
 import {
   MainPageAboutUs,
-  MainPageFooter,
   MainPagePromo,
   MainPageOurBest,
 } from "./components/index";
@@ -11,10 +10,8 @@ function MainPage(props) {
     <main className="mainpage-container">
       <MainPagePromo mainpagePromoState={props.mainpageState} />
       <MainPageAboutUs mainpageAboutState={props.mainpageState} />
-      <MainPageOurBest />
-      <MainPageFooter mainPageFooterState={props.mainpageState} />
+      <MainPageOurBest mainpageOurBest={props.mainpageState} />
     </main>
-
   );
 }
 

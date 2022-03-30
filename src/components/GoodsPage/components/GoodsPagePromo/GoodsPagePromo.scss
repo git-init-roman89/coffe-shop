@@ -1,0 +1,16 @@
+.goodspage-promo-section {
+    width: 100%;
+    max-width: 100%;
+    min-height: 38vh;
+    background: url(../../../../../public/img/Goods-bg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .goodspage-promo-title {
+      font-size: 2.5rem;
+      color: white;
+  }
