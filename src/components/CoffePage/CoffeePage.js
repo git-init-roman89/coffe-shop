@@ -1,8 +1,13 @@
+import {CoffeePagePromo, CoffeePageFeatured, CoffeePageAbout} from "./components/index";
 import "./CoffeePage.scss"
 
-function CoffeePage() {
+function CoffeePage(props) {
     return (
-        <h2>CoffeePage</h2>
+        <main className="coffeepage-container">
+        <CoffeePagePromo />
+        <CoffeePageAbout />
+        <CoffeePageFeatured coffeepageFeaturedState={props.coffeepageState} />
+        </main>
     )
 }
 

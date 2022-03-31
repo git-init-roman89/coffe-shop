@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Fragment } from "react";
+import CoffeeCard from "./components/CoffeeCard";
 import {
   MainPageNav,
   MainPage,
@@ -13,10 +13,13 @@ import "./App.scss";
 
 function App(props) {
   return (
-    <Fragment>
-      <MainPageNav mainpageNavState={props.appState} />
+      <>
+      <div className="main-menu">
+      <MainPageNav mainpageNavState={props.appState.MainPageNavigation} />
+      </div>
+      
       <Routes>
-        <Route path="/" element={<MainPage mainpageState={props.appState} />} />
+        <Route exact path="/" element={<MainPage mainpageState={props.appState} />} />
         <Route
           path="/ourCoffee"
           element={<CoffeePage coffeepageState={props.appState} />}
@@ -26,9 +29,14 @@ function App(props) {
           path="/yourPleasure"
           element={<GoodsPage goodspageState={props.appState} />}
         />
+        <Route
+          path={`coffee/:id`}
+          element={<CoffeeCard goodspageState={props.appState} />} 
+        />
       </Routes>
+      {/* <Route path={`${match.path}/:topicId`}></Route> */}
       <MainPageFooter mainPageFooterState={props.appState} />
-    </Fragment>
+      </>
   );
 }
 

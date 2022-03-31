@@ -4,12 +4,10 @@ import "./MainPageFooter.scss";
 
 
 function MainPageFooter(props) {
-        const footerMenu ={
-            color: "black"
-        }
+
     return (
         <footer className="mainpage-footer">
-            <MainPageNav mainpageNavState={props.mainPageFooterState}/>
+            <MainPageNav mainpageNavState={props.mainPageFooterState.MainPageNavigation} isBlack />
             <CoffeBeansShield />
         </footer>
     )

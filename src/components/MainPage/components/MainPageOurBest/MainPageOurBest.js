@@ -6,7 +6,7 @@ function MainPageOurBest(props) {
 
     const bestProducts = props.mainpageOurBest.Products.map(item => {
       return (
-          item.best ? <ProductCard key={item.id} productCardState={props.mainpageOurBest}/> : null
+          item.best ? <ProductCard key={item.id} item={item} /> : null
       )
   })
     return (

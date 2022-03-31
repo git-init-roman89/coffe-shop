@@ -1,4 +1,4 @@
-.goodspage-about-section {
+.coffeepage-about-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,22 +17,22 @@
     gap: 2rem;
 }
 
-.goods-about-img {
+.coffeepage-about-img {
     width: 40%;
     height: auto;
 }
 
-.goods-about-text {
+.coffeepage-about-text {
     width: 50%;
     text-align: center;
 }
 
-.goods-about-title {
+.coffeepage-about-title {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.goods-about-paragraph {
+.coffeepage-about-paragraph {
     font-size: 0.875rem;
 }
 
@@ -40,7 +40,7 @@
     padding: 1.8rem 0 1rem 0;
 }
 
-.about-underline {
+.coffeepage-underline {
     border-bottom: 2px solid black;
     width: 15rem;
 }
