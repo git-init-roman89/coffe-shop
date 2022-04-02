@@ -1,11 +1,10 @@
 import { Routes, Route } from "react-router-dom";
-import CoffeeCard from "./components/CoffeeCard";
+import CoffeeCard from "./components/CoffeeCard/CoffeeCard";
 import {
   MainPageNav,
   MainPage,
   GoodsPage,
   CoffeePage,
-  CoffeeItemPage,
   MainPageFooter,
 } from "./components/index";
 
@@ -14,9 +13,9 @@ import "./App.scss";
 function App(props) {
   return (
       <>
-      <div className="main-menu">
+      <header className="main-menu">
       <MainPageNav mainpageNavState={props.appState.MainPageNavigation} />
-      </div>
+      </header>
       
       <Routes>
         <Route exact path="/" element={<MainPage mainpageState={props.appState} />} />
@@ -24,7 +23,6 @@ function App(props) {
           path="/ourCoffee"
           element={<CoffeePage coffeepageState={props.appState} />}
         />
-        <Route path="/coffeeItem" element={<CoffeeItemPage />} />
         <Route
           path="/yourPleasure"
           element={<GoodsPage goodspageState={props.appState} />}
@@ -34,7 +32,6 @@ function App(props) {
           element={<CoffeeCard goodspageState={props.appState} />} 
         />
       </Routes>
-      {/* <Route path={`${match.path}/:topicId`}></Route> */}
       <MainPageFooter mainPageFooterState={props.appState} />
       </>
   );

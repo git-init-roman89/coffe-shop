@@ -1,12 +1,13 @@
 import CoffeBeansShield from "../../../MainPage/components/MainPageAboutUs/components/CoffeBeansShield";
 import "./GoodsPageAbout.scss";
+import {goodsAboutImg} from "../../../assets/index"
 
 function GoodsPageAbout() {
   return (
     <section className="goodspage-about-section">
       <div className="about-container">
         <img
-          src="img/goods-about-img.jpg"
+          src={goodsAboutImg}
           alt="black coffeecup on a table with hot coffee"
           className="goods-about-img"
         />

@@ -1,4 +1,5 @@
 import "./MainPagePromo.scss";
+import {beansSolid} from "../../../assets/index";
 
 function MainPageLogo(props) {
   const { text1, text2, text3, text4 } =
@@ -9,7 +10,7 @@ function MainPageLogo(props) {
             <h1 className="mainpage-slogan-text">{text1}</h1>
             <div className="slogan-logo-lines">
                 <div className="slogan-logo-item"></div>
-                <img src="img/beans-solid.png" alt="two styled solid coffe beans" className="slogan-logo" />
+                <img src={beansSolid} alt="two styled solid coffe beans" className="slogan-logo" />
                 <div className="slogan-logo-item"></div>
             </div>
             <h2 className="mainpage-slogan-subtext sub-text-padding">{text2}</h2>

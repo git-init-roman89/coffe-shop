@@ -5,7 +5,7 @@ import {Link} from "react-router-dom"
 function GoodsPageFeatured(props) {
     const featuredProducts = props.goodspageFeaturedState.Products.map(item => {
         return (
-            item.best ? null :  <ProductCard key={item.id} item={item} />
+            item.best ? null :  <ProductCard key={item.id} item={item} itemShadow />
         )
     })
     return (

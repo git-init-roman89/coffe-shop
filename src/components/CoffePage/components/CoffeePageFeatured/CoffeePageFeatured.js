@@ -15,7 +15,7 @@ function CoffeePageFeatured(props) {
   })
   .map(
     (item) => {
-      return <ProductCard key={item.id} item={item} input={inputText} />;
+      return <ProductCard key={item.id} item={item} input={inputText} itemShadow />;
     }
   );
   return (

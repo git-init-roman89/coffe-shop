@@ -1,11 +1,12 @@
 import "./CoffeBeansShield.scss";
+import {beansSolidBlack} from "../../../../assets/index";
 
 function CoffeBeansShield() {
   return (
     <div className="slogan-about-lines">
       <div className="slogan-about-item"></div>
       <img
-        src="img/beans-solid-black.png"
+        src={beansSolidBlack}
         alt="two styled solid coffe beans"
         className="about-logo"
       />

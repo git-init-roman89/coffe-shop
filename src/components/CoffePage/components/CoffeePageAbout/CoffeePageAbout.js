@@ -1,17 +1,18 @@
 import CoffeBeansShield from "../../../MainPage/components/MainPageAboutUs/components/CoffeBeansShield";
 import "./CoffeePageAbout.scss";
+import {coffeeAboutImg} from "../../../assets/index";
 
 function CoffeePageAbout() {
   return (
     <section className="coffeepage-about-section">
       <div className="about-container">
         <img
-          src="img/coffee-about-img.jpg"
+          src={coffeeAboutImg}
           alt="black coffeecup on a table with hot coffee"
           className="coffeepage-about-img"
         />
         <div className="coffeepage-about-text">
-          <h2 className="coffeepage-about-title">About our goods</h2>
+          <h2 className="coffeepage-about-title">About our beans</h2>
           <CoffeBeansShield />
           <p className="goods-about-paragraph paragraph-padding">
             Extremity sweetness difficult behaviour he of. On disposal of as

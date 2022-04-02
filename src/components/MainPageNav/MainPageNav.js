@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import "./MainPageNav.scss";
+import {blackBeansLogo, beansLogo} from "../assets/index";
 
 function MainPageNav({mainpageNavState, isBlack=false}) {
   const { listItem1, listItem2, listItem3 } = mainpageNavState;
   return (
-    <header className="main-header">
-      <nav className="mainpage-nav">
+    <div className="main-navigation">
+      <nav className={`mainpage-nav ${isBlack ? "mainpage-nav-footer" : ""}`}>
         <img
-          src={isBlack ? "img/black-beans-logo.png" : "img/group.png"}
+          src={isBlack ? blackBeansLogo : beansLogo}
           alt="two styled coffe beans"
-          className="logo"
+          className={`logo ${isBlack ? "logo-footer" : ""}`}
         />
         <ul className={`nav-list ${isBlack ? "nav-list-black" : ""}`}>
           <li className="nav-list-item">
@@ -23,7 +24,7 @@ function MainPageNav({mainpageNavState, isBlack=false}) {
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
   );
 }
 
