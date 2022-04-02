@@ -44,3 +44,24 @@
     border-bottom: 2px solid black;
     width: 15rem;
 }
+
+@media screen and (max-width: 900px) {
+
+    .about-container {
+        width: 80%;
+    }
+
+    .coffeepage-about-img {
+        width: 70%;
+        height: auto;
+    }
+    
+    .coffeepage-about-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .coffeepage-about-paragraph {
+        font-size: 0.8rem;
+    }
+}

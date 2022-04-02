@@ -44,3 +44,10 @@
     border-bottom: 2px solid black;
     width: 15rem;
 }
+
+@media screen and (max-width: 900px) {
+
+    .about-container {
+        width: 80%;
+    }
+}

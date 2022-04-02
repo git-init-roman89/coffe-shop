@@ -14,7 +14,7 @@ function CoffeePageAbout() {
         <div className="coffeepage-about-text">
           <h2 className="coffeepage-about-title">About our beans</h2>
           <CoffeBeansShield />
-          <p className="goods-about-paragraph paragraph-padding">
+          <p className="coffeepage-about-paragraph paragraph-padding">
             Extremity sweetness difficult behaviour he of. On disposal of as
             landlord horrible.
           </p>
