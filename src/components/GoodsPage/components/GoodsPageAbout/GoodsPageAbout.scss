@@ -8,7 +8,7 @@
     width: 100%;
 }
 
-.about-container {
+.goods-about-container {
     width: 60%;
     display: flex;
     flex-direction: row;
@@ -47,7 +47,35 @@
 
 @media screen and (max-width: 900px) {
 
-    .about-container {
+    .goods-about-container {
         width: 80%;
     }
+
+    .goods-about-img {
+        width: 70%;
+        height: auto;
+    }
+    
+    .goods-about-text {
+        width: 80%;
+        text-align: center;
+    }
+
+    .goods-about-paragraph {
+        font-size: 0.8rem;
+    }
 }
+
+@media screen and (max-width: 600px) {
+
+    .goods-about-container {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+  }
+  

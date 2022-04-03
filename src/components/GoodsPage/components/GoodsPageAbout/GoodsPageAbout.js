@@ -5,7 +5,7 @@ import {goodsAboutImg} from "../../../assets/index"
 function GoodsPageAbout() {
   return (
     <section className="goodspage-about-section">
-      <div className="about-container">
+      <div className="goods-about-container">
         <img
           src={goodsAboutImg}
           alt="black coffeecup on a table with hot coffee"

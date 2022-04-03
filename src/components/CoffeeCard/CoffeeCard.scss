@@ -88,3 +88,50 @@
   padding-top: 1rem;
 }
 
+@media screen and (max-width: 1500px) {
+
+  .coffee-img-container {
+    width: 40%;
+  }
+
+  .coffecard-container {
+    width: 40%;
+  }
+
+  .coffee-item-description {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .coffee-img-container {
+    width: 40%;
+  }
+
+  .coffecard-container {
+    width: 40%;
+  }
+
+  .coffee-item-description {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .coffee-img-container {
+    width: 80%;
+  }
+
+  .coffecard-container {
+    width: 80%;
+  }
+
+  .coffee-item-description {
+    width: 100%;
+  }
+
+}
